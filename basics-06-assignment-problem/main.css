@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+}
+
+#assignment-instructions {
+  color: blueviolet;
+}
+
+code {
+  font-family: monospace;
+  color: red;
+}
+
+li + li > code {
+  color: green;
+}
+
+li + li + li code {
+  color: red;
+}
+
+li + li {
+  background-color: black;
+  color: white;
+}
+
+li {
+  font-family: inherit;
+  list-style: none;
+}
