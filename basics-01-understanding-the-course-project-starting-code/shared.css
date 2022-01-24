@@ -11,17 +11,6 @@ body {
   margin: 0;
 }
 
-#product-overview {
-  background: url("freedom.jpg");
-  padding: 20px;
-  width: 100%;
-  height: 528px;
-  box-sizing: border-box;
-}
-#product-overview h1 {
-  color: white;
-  font-family: "Anton", sans-serif;
-}
 .main-header {
   width: 100%;
   background: #2ddf5c;
@@ -40,7 +29,15 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 22px;
+  height: 23px;
+  display: inline-block;
 }
+
+.main-header__brand img {
+  height: 100%;
+  /* height: inherit; */
+}
+
 .main-nav {
   display: inline-block;
   text-align: right;
