@@ -1,5 +1,5 @@
 main {
-  padding-top: 51px;
+  padding-top: 4rem;
 }
 
 .background {
@@ -8,14 +8,14 @@ main {
   height: 100%;
   position: fixed;
   z-index: -1000;
-  filter: grayscale(80%)
+  filter: grayscale(80%);
 }
 
 .package {
   width: 80%;
-  padding: 32px;
+  padding: 2rem;
   border: 5px solid green;
-  margin: 16px 0;
+  margin: 1rem 0;
   border-left: none;
   position: relative;
 }
@@ -58,11 +58,11 @@ main {
   position: absolute;
   right: 0;
   top: 0;
-  margin: 20px;
-  font-size: 12px;
+  margin: 1.2rem;
+  font-size: 0.8rem;
   color: white;
   background: orangered;
-  padding: 10px;
+  padding: 0.6rem;
 }
 
 .package__info {
@@ -74,9 +74,9 @@ main {
 }
 
 .package__description {
-  padding: 16px;
+  padding: 1rem;
   border: 2px solid #002e00;
   background: white;
   color: #002e00;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
