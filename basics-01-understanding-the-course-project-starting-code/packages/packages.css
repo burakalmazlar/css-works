@@ -1,5 +1,5 @@
 main {
-  padding-top: 4rem;
+  padding-top: 1rem;
 }
 
 .background {
@@ -13,6 +13,7 @@ main {
 
 .package {
   width: 80%;
+  min-width: 20rem;
   padding: 2rem;
   border: 5px solid green;
   margin: 1rem 0;
@@ -79,4 +80,22 @@ main {
   background: white;
   color: #002e00;
   font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .package {
+    border-left: 5px solid green;
+  }
+
+  .package--free {
+    border-right: 5px solid green;
+  }
 }

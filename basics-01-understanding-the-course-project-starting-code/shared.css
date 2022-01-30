@@ -11,6 +11,11 @@ body {
   margin: 0;
 }
 
+main {
+  margin-top: 3.5rem;
+  min-height: calc(100vh - 3.5rem - 8.22rem);
+}
+
 .main-header {
   width: 100%;
   background: #2ddf5c;
@@ -19,6 +24,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
+  height: 3.5rem;
 }
 
 .toggle-button {
@@ -32,7 +38,7 @@ body {
   display: inline-block;
 }
 
-@media (min-width: 40rem) and (max-height: 60rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
   .toggle-button {
     display: none;
   }
@@ -53,9 +59,10 @@ body {
 .main-logo {
   display: inline-block;
   vertical-align: middle;
+  height: 100%;
 }
 .main-header__brand {
-  height: 2rem;
+  height: 100%;
   display: inline-block;
   vertical-align: middle;
 }
@@ -69,9 +76,9 @@ body {
   display: none;
   text-align: right;
   vertical-align: middle;
-  width: calc(100% - 124px);
+  width: calc(100% - 3rem);
 }
-@media (min-width: 40rem) and (max-height: 60rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
   .main-nav {
     display: inline-block;
   }
@@ -91,7 +98,6 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-
 
 /* .main-nav__item > a::before {
   content: " > ";
@@ -197,7 +203,7 @@ body {
   margin: 1rem 0;
 }
 
-@media (min-width: 40rem) and (max-height: 60rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
   .main-footer__link {
     display: inline-block;
     margin: 0 1rem;
