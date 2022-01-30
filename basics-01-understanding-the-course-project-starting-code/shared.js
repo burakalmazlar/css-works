@@ -7,7 +7,6 @@ const toggleButton = document.querySelector(".toggle-button");
 const mobileNav = document.querySelector(".mobile-nav");
 
 const close = (e) => {
-  e.preventDefault();
   // backdrop.style.display = '';
   // modal.style.display = '';
   // mobileNav.style.display = '';
