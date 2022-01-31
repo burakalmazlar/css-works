@@ -49,6 +49,9 @@ main {
 
 .package__title {
   color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-decoration: underline solid;
 }
 
 .package--premium .package__title {
@@ -64,10 +67,20 @@ main {
   color: white;
   background: orangered;
   padding: 0.6rem;
+  text-decoration: underline double;
 }
 
 .package__info {
   color: #606a74;
+  /* 
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.2 
+  font-family: "Roboto", sans-serif; 
+  */
+  font: italic small-caps 700 1.4rem/1.2 "Roboto", sans-serif;
 }
 
 .package--premium .package__info {
@@ -80,6 +93,10 @@ main {
   background: white;
   color: #002e00;
   font-size: 1.2rem;
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 400;
+  line-height: 1.5;
+  text-shadow: 0px 0px 8px #888888;
 }
 
 @media (min-width: 40rem) {
