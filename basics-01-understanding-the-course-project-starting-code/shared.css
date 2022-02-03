@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700");
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto'); */
 @import url(fonts/Roboto-Regular.ttf);
 
 @font-face {
@@ -20,27 +19,25 @@
 }
 
 html {
-  overflow: auto;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 body {
   font-family: "Montserrat", "Verdana", sans-serif;
-  /* font-family: 'Roboto', sans-serif; */
   margin: 0;
+  display: grid;
+  grid-template-rows: 3.5rem auto fit-content(8rem);
+  grid-template-areas: "header" "main" "footer";
+  height: 100%;
 }
 
 main {
-  margin-top: 3.5rem;
-  min-height: calc(100vh - 3.5rem - 12.36rem);
-}
-
-@media (min-width: 40rem) and (min-height: 40rem) {
-  main {
-    min-height: calc(100vh - 3.5rem - 8.21rem);
-  }
+  grid-area: main;
 }
 
 .main-header {
+  grid-area: header;
   width: 100%;
   background: #2ddf5c;
   padding: 0.5rem 1rem;
@@ -208,6 +205,7 @@ main {
 }
 
 .main-footer {
+  grid-area: footer;
   background: black;
   padding: 2rem;
   margin-top: 3rem;

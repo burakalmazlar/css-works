@@ -12,20 +12,23 @@ main {
   margin: auto;
   max-width: 25rem;
   min-width: 8rem;
+  display: grid;
+  row-gap: 1rem;
+  column-gap: 0.7rem ;
 }
 
-.signup-form input,
+/* .signup-form input,
 .signup-form select,
 .signup-form label {
   display: block;
   width: 100%;
   margin-top: 1rem;
-}
+} */
 
 .signup-form input[id$="terms"],
 .signup-form input[id$="terms"] + label {
-  display: inline-block;
-  width: auto;
+  /* display: inline-block;
+  width: auto; */
   vertical-align: bottom;
 }
 
@@ -62,13 +65,32 @@ main {
   background-color: #ffbfbf;
 }
 
-.signup-form button {
+/* .signup-form button {
   display: inline-block;
   margin-top: 1rem;
-}
+} */
 
 .signup-form button[disabled] {
   border-color: #7c7c7c;
   background-color: #b6b6b6;
   color: #7c7c7c;
+  cursor: not-allowed;
+}
+
+@media (min-width: 40rem) {
+  .signup-form {
+    max-width: 35rem;
+    grid-template-columns: 10rem auto;
+    align-items: center;
+    
+  }
+  .signup-form label {
+    justify-self: end;
+  }
+  
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
 }
