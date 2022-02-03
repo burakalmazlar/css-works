@@ -10,9 +10,9 @@ const close = (e) => {
   // backdrop.style.display = '';
   // modal.style.display = '';
   // mobileNav.style.display = '';
-  backdrop.classList.remove("open");
+  backdrop.classList.remove("up");
   modal.classList.remove("open");
-  mobileNav.classList.remove("open");
+  mobileNav.classList.remove("show");
 };
 
 backdrop.addEventListener("click", close);
@@ -24,7 +24,7 @@ const selectPlanButton = document.querySelectorAll(".plan .button");
 selectPlanButton.forEach((btn) => {
   if (btn) {
     btn.addEventListener("click", () => {
-      backdrop.classList.add("open");
+      backdrop.classList.add("up");
       modal.classList.add("open");
       // backdrop.style.display = 'initial';
       // modal.style.display = 'initial';
@@ -33,6 +33,6 @@ selectPlanButton.forEach((btn) => {
 });
 
 toggleButton.addEventListener("click", () => {
-  backdrop.classList.add("open");
-  mobileNav.classList.add("open");
+  backdrop.classList.add("up");
+  mobileNav.classList.add("show");
 });

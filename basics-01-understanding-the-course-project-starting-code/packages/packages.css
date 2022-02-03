@@ -30,6 +30,7 @@ main {
 
 .package--plus {
   background: rgb(168, 235, 168, 0.95);
+  overflow: hidden;
 }
 .package--free {
   background: rgb(210, 252, 210, 0.95);
@@ -62,12 +63,16 @@ main {
   position: absolute;
   right: 0;
   top: 0;
-  margin: 1.2rem;
+  margin: 0;
   font-size: 0.8rem;
   color: white;
   background: orangered;
   padding: 0.6rem;
   text-decoration: underline double;
+  transform: rotateZ(45deg) translateX(4.5rem) translateY(-1.5rem);
+  transform-origin: center;
+  width: 15rem;
+  text-align: center;
 }
 
 .package__info {
